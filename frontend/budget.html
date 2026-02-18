@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Budget</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/budget.css">
+</head>
+
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>💰 FinTrack</h2>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="transactions.html">Transactions</a>
+    <a href="add-transaction.html">Add Transaction</a>
+    <a href="budget.html">Budget</a>
+    <a href="login.html">Logout</a>
+  </div>
+
+  <!-- Main -->
+  <div class="main">
+
+    <div class="topbar">
+      <h1>Monthly Budget</h1>
+    </div>
+
+    <div class="card">
+
+      <form id="budgetForm">
+
+        <div class="form-group">
+          <label>Month</label>
+          <input type="month" id="month" required />
+        </div>
+
+        <div class="form-group">
+          <label>Budget Amount</label>
+          <input type="number" id="amount" required />
+        </div>
+
+        <button type="submit" class="submit-btn">Save Budget</button>
+
+      </form>
+
+    </div>
+
+    <div class="card" style="margin-top:20px;">
+      <h3>Existing Budgets</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Month</th>
+            <th>Amount</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="budgetTable"></tbody>
+      </table>
+    </div>
+
+  </div>
+
+  <script src="script/budget.js"></script>
+</body>
+</html>

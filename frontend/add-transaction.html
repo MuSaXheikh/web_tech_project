@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Add Transaction</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/add-transaction.css">
+</head>
+
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>💰 FinTrack</h2>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="transactions.html">Transactions</a>
+    <a href="add-transaction.html">Add Transaction</a>
+    <a href="budget.html">Budget</a>
+    <a href="login.html">Logout</a>
+  </div>
+
+  <!-- Main -->
+  <div class="main">
+
+    <div class="topbar">
+      <h1>Add Transaction</h1>
+    </div>
+
+    <div class="card">
+
+      <form id="transactionForm">
+
+        <div class="form-group">
+          <label>Amount</label>
+          <input type="number" id="amount" required />
+        </div>
+
+        <div class="form-group">
+          <label>Type</label>
+          <select id="type" required>
+            <option value="">Select</option>
+            <option value="income">Income</option>
+            <option value="expense">Expense</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Category</label>
+          <select id="category" required></select>
+        </div>
+
+        <div class="form-group">
+          <label>Account</label>
+          <select id="account">
+            <option value="cash">Cash</option>
+            <option value="bank">Bank</option>
+            <option value="wallet">Wallet</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Date</label>
+          <input type="date" id="date" required />
+        </div>
+
+        <div class="form-group">
+          <label>Description</label>
+          <input type="text" id="description" />
+        </div>
+
+        <button type="submit" class="submit-btn">Save Transaction</button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+  <script src="script/add-transaction.js"></script>
+</body>
+</html>

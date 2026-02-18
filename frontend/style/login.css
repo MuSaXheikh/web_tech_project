@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 420px;
+}
+
+.login-card {
+    background: #fff;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.login-card h2 {
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #777;
+    margin-bottom: 22px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 12px;
+    font-size: 14px;
+    color: #444;
+}
+
+input {
+    padding: 11px;
+    margin-top: 6px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+input:focus {
+    border-color: #2d89ef;
+    outline: none;
+}
+
+button {
+    margin-top: 22px;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background: #2d89ef;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1b5fbf;
+}
+
+.signup-text {
+    text-align: center;
+    margin-top: 18px;
+    font-size: 14px;
+}
+
+.signup-text a {
+    color: #2d89ef;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.error {
+    color: red;
+    text-align: center;
+    margin-top: 12px;
+    font-size: 14px;
+}
